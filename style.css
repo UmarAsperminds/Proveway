@@ -1,0 +1,300 @@
+body{
+  background-color: #F6F6F7;
+  font-family: "Roboto", sans-serif;
+}
+
+.ExternalCard{
+  width: 35%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:10%;
+  bottom:10%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  justify-content: space-between;
+
+}
+
+.card {
+  background-color: #FFFFFF;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,1.2);
+  transition: 0.3s;
+}
+
+.RadioCard{
+  border-radius: 15px;
+  border: 1px solid white;
+  box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  display: flex;
+}
+
+.RadioCard .LeftSection{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color:#FF6B82;
+  width:25%;
+  border-right: 10px solid black dashed;
+  height: 4em;
+}
+
+.LeftSectionText{
+  color: white;
+  width: 100%;
+  display: inline-block;
+  margin-top: 12%;
+  font-size: 19px;
+  text-align: center;
+  transform: scale(1, 0.9);
+}
+
+.RightSection{
+  width: 100%;
+  display: inline-flex;
+  align-items : center;
+}
+
+.RadioButtonDiv{
+  width: 15%;
+  text-align: center;
+}
+
+.SpecsRadioButtonDiv{
+  width: 15%;
+  text-align: center;
+}
+
+.RadioCardWithSpecification{
+  border:1px solid #FF6B82;
+  border-radius: 15px;
+  box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin-left: 10%;
+  /* display: flex; */
+  background-color: #FFF9FA;
+}
+
+.SpecOffer{
+  color: white;
+  background-color: #FF6B82;
+  padding: 3px;
+  font-size: 14px;
+}
+
+.DetailsDiv{
+  width: 45%;
+  line-height: 150%;
+}
+
+.SpecDetailsDiv{
+  width: 85%;
+}
+
+.OriginalPrice{
+  text-decoration: line-through;
+  color: #9F9F9F;
+  font-size: 11px;
+}
+
+.dollar:before {
+  content: '$';
+  font-family: sans-serif;
+}
+
+.HintDiv{
+  color: #FF6B82;
+  font-weight: 700;
+}
+
+.SpecificationsTable{
+  font-size: 12px;
+}
+
+.SpecificationsDiv{
+  margin-left:10%;
+}
+
+input[type='radio'] {
+  -webkit-appearance:none;
+  width:15px;
+  height:15px;
+  border:1px solid #FF6B82;
+  border-radius:50%;
+  outline:none;
+  /* box-shadow:0 0 5px 0px gray inset; */
+}
+input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  margin: 20% auto;
+  border-radius:50%;
+}
+input[type='radio']:checked:before {
+  background:#FF6B82;
+}
+
+.dashed-line {
+  --s: 4px;
+    width: 2px;
+    background: radial-gradient(circle closest-side, #FCFCFF 98%, #0000) 0 0 / 100% var(--s), linear-gradient(#FCFCFF 50%, #0000 0) 0 calc(var(--s) / 2) / 100% calc(2* var(--s));
+    margin-left: -1px;
+}
+
+
+
+.container {
+  padding: 2px 16px;
+}
+
+.HeadingLine{
+  margin-top:5%;
+  color: #FF6B82;
+  font-size: 4.5vh;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  transform: scale(1, 0.8);
+}
+
+
+
+.CustomizedSelect {
+  border: 1px solid #ccc;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 2px;
+  /* overflow: hidden; */
+  position: relative;
+  height: 25px;
+}
+select:focus { outline: none; }
+.CustomizedSelect select {
+  padding: 5px 0 5px 5px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  -webkit-appearance: none; 
+}
+
+tr{
+  height: 22px;
+}
+
+.row{
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.col-6{
+  width: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-12{
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.col-6-right{
+  width: 50%;
+  text-align: right;
+  font-size: 14px;
+}
+
+.FreeDeliveryDiv{
+  color:#FF6B82;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left:10px;
+}
+
+.AddToCartButton{
+  cursor:pointer;
+  height: 40px;
+  background-color: #FF6B82;
+  width: 100%;
+  font-size: 13px;
+  color:white;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-family: 'Roboto';
+}
+
+.align-center{
+  text-align:center
+}
+
+.PoweredByCaption{
+  color:grey;
+}
+
+.CompanyNameCaption{
+  color:#FF6B82;
+  font-weight: 800;
+}
+
+
+.sort-desc-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  bottom: -2px;
+  right: 4px;
+  font-size: 15px;
+  transform: scale(0.8, 1);
+  position: absolute;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid currentColor;
+}
+
+.PlusIcon{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.ActiveRadioCard .LeftSection,
+.ActiveRadioCard .dashed-line{
+  display: none;
+}
+
+.ActiveRadioCard{
+  padding:20px 10px 20px 15px;
+  width:75%;
+}
+
+.RadioCard .SpecOffer, .RadioCard .SpecificationsDiv{
+  display: none;
+}
+
+.ActiveRadioCard .HintDiv{
+  /* display: none; */
+  margin-left: 10%;
+}
+
+.RadioCard .OriginalPrice{
+  display: none;
+}
+
+.TotalValue{
+  font-size: 15px;
+  font-weight: 500;
+}
