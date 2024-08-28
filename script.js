@@ -1,5 +1,4 @@
 document.querySelectorAll('.OfferOptionsDiv').forEach((elem) => {
-	console.log(elem)
     elem.addEventListener("click", function(event) {
 		let ActiveElement = document.querySelector('.ActiveRadioCard');
 		if(ActiveElement){
@@ -11,5 +10,6 @@ document.querySelectorAll('.OfferOptionsDiv').forEach((elem) => {
 		let OfferDiv = elem.closest('.OfferOptionsDiv')
 		OfferDiv.classList.add('ActiveRadioCard', 'RadioCardWithSpecification')
 		OfferDiv.classList.remove('RadioCard')
+		document.querySelector('.TotalAmount').innerText = parseFloat(OfferDiv.children[2].children[1].children[2].innerText).toFixed(2)
     });
 });
